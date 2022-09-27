@@ -9,14 +9,20 @@ const Portfolio = () => {
     {
       id: 1,
       src: codeEditor,
+      demo:1,
+      code:"https://github.com/junaid-arif-24/Code-editor.git"
     },
     {
       id: 2,
       src: portfolioWeb,
+      demo:"",
+      code:"https://github.com/junaid-arif-24/Code-editor.git"
     },
     {
       id: 3,
       src: gymReg,
+      demo:"",
+      code:"https://github.com/junaid-arif-24/Code-editor.git"
     },
    
   ];
@@ -24,7 +30,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full pb-30" 
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full pt-32 pb-30" 
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
@@ -35,7 +41,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src ,code}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -44,10 +50,10 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                 <a href ="https://github.com/junaid-arif-24/Code-editor.git">Demo</a> 
+                 <a href ={code}>Demo</a> 
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                <a href ={code}>Code</a> 
                 </button>
               </div>
             </div>
