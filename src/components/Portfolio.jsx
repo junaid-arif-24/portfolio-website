@@ -15,14 +15,14 @@ const Portfolio = () => {
     {
       id: 2,
       src: portfolioWeb,
-      demo:"",
-      code:"https://github.com/junaid-arif-24/Code-editor.git"
+      demo:"https://mohd-junaid-portfolio.netlify.app/",
+      code:"https://github.com/junaid-arif-24/portfolio-website.git"
     },
     {
       id: 3,
       src: gymReg,
       demo:"",
-      code:"https://github.com/junaid-arif-24/Code-editor.git"
+      code:"https://github.com/junaid-arif-24/Gym-Registration-Page.git"
     },
    
   ];
